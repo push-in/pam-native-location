@@ -1,0 +1,48 @@
+{
+    "$schema": "vendor/pushinbr/pam-native/resources/pam-native.plugin.schema.json",
+    "version": 1,
+    "protocol": 1,
+    "pamNative": {
+        "minimum": "1.46.0",
+        "maximumExclusive": "2.0.0"
+    },
+    "php": {
+        "provider": "Pam\\Native\\Location\\LocationPluginProvider"
+    },
+    "android": {
+        "namespace": "dev.pam.location",
+        "minSdk": 26,
+        "permissions": [
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.ACCESS_COARSE_LOCATION"
+        ],
+        "dependencies": [
+            "androidx.core:core-ktx:1.17.0",
+            "com.google.android.gms:play-services-location:21.4.0"
+        ],
+        "sourceDirs": [
+            "android/src/main/kotlin"
+        ]
+    },
+    "ios": {
+        "minimumVersion": "15.0",
+        "sourceDirs": [
+            "ios/Sources"
+        ],
+        "frameworks": [
+            "CoreLocation"
+        ],
+        "usageDescriptions": {
+            "NSLocationWhenInUseUsageDescription": "Use your location."
+        }
+    },
+    "idl": "pam-native.idl.json",
+    "modules": [
+        {
+            "name": "location",
+            "class": "dev.pam.location.LocationModule",
+            "iosClass": "LocationModule"
+        }
+    ],
+    "views": []
+}

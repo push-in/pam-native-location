@@ -1,0 +1,19 @@
+{
+    "$schema": "vendor/pushinbr/pam-native-plugin-kit/resources/pam-native.idl.schema.json",
+    "version": 1,
+    "namespace": "Pam.Location",
+    "enums": {
+        "LocationError": {
+            "Permission": 1,
+            "Disabled": 2,
+            "Unavailable": 3,
+            "Timeout": 4
+        },
+        "LocationServicesResult": {
+            "Enabled": 1,
+            "Denied": 2,
+            "Unavailable": 3
+        }
+    },
+    "records": {}
+}
