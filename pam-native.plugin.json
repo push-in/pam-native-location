@@ -11,7 +11,7 @@
     },
     "android": {
         "namespace": "dev.pam.location",
-        "minSdk": 26,
+        "minSdk": 24,
         "permissions": [
             "android.permission.ACCESS_FINE_LOCATION",
             "android.permission.ACCESS_COARSE_LOCATION"

@@ -55,7 +55,7 @@ Location::current(
 
 | Platform | Support | Notes |
 | --- | --- | --- |
-| Android | API 26+ | Play Services Location 21.4.0 (fused provider; `LocationManager` fallback without Play Services) |
+| Android | API 24+ | Play Services Location 21.4.0 (fused provider; `LocationManager` fallback without Play Services) |
 | iOS | 15.0+ | CoreLocation |
 | PAM Native | 1.46.0 to < 2.0.0 | From `pam-native.plugin.json`; PHP 8.5+ |
 
